@@ -497,7 +497,7 @@ header .navbar nav ul li a{
     cursor: pointer;
     margin-bottom: 30px;
     color: var(--black);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     position: relative;
     padding-left: 20px; /* Отступ для кастомного маркера */
     &::before {
