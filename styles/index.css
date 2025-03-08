@@ -292,7 +292,7 @@ header .navbar nav ul li a{
 
 .section_2 .cards .card{
     width: 15vw;
-    max-hotfixheight: 400px;
+    max-height: 400px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
