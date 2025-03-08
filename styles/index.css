@@ -20,6 +20,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Regular";
+    font-size: 0.9rem;
 }
 
 html{
@@ -52,13 +53,13 @@ header .before_navbar{
     justify-content: space-between;
     align-items: center;
     background-color: var(--dark);
-    padding: 0px 200px;
-    min-height: 65px;
+    padding: 0px 180px;
+    min-height: 55px;
 }
 
 header .before_navbar p{
     text-align: center;
-    padding: 10px;
+    padding: 8px;
     color: #fff;
     cursor: pointer;
 }
@@ -112,7 +113,7 @@ header .navbar{
 }
 
 header .navbar h1{
-    font-size: 24px;
+    font-size: 1.2rem;
     margin: 0;
 }
 
@@ -124,12 +125,13 @@ header .navbar nav ul{
 }
 
 header .navbar nav ul li{
-    margin-left: 50px;
+    margin-left: 15px;
 }
 
 header .navbar nav ul li a{
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 200;
     color: var(--dark);
 }
 
@@ -157,20 +159,20 @@ header .navbar nav ul li a{
 }
 
 .section_1 .main_text_div h1{
-    font-size: 3rem;
+    font-size: 2.3rem;
     font-weight: 500;
     color: var(--dark);
 }
 
 .section_1 .main_text_div h2{
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: normal;
     margin-bottom: 20px;
     color: var(--dark);
 }
 
 .section_1 .main_text_div p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--black);
     margin-bottom: 14px;
     line-height: 150%;
@@ -179,6 +181,7 @@ header .navbar nav ul li a{
     b{
         font-weight: 500;
         color: var(--black_bold);
+        font-size: 1.2rem;
     }
 
 }
@@ -186,13 +189,13 @@ header .navbar nav ul li a{
 
 
 .sign_up_button{
-    margin-top: 30px;
-    padding: 20px 50px;
+    margin-top: 20px;
+    padding: 15px 40px;
     background-color: var(--blue);
     color: #fff;
     border: none;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     border-radius: calc(0.6rem + 20px);
     font-weight: 700;
 }
@@ -249,28 +252,14 @@ header .navbar nav ul li a{
     }
 }
 
-.section_2 .description h1{
-    font-size: 3rem;
-    color: var(--black);
-    margin-bottom: 60px;
-    font-weight: 500;
-
-    &::after{
-        content: '';
-        display: block;
-        width: 50px;
-        height: 3px;
-        background-color: var(--blue);
-        margin: 0 auto;
-        margin-top: 20px;
-    }
-}
-
 .section_2 .description h2{
-    font-size: 1.4rem;
+    font-size: 0.9rem;
     color: var(--black);
     font-family: 'Light';
     font-weight: 200;
+    word-spacing: 3px;
+    letter-spacing: 1.5px;
+    padding: 0 20px;
 
     &::after{
         content: '';
@@ -281,13 +270,14 @@ header .navbar nav ul li a{
         margin: 0 auto;
         margin-top: 20px;
     }
+
 }
 
 .section_2 .description h3{
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: var(--black);
     font-family: 'Regular';
-    font-weight: 450;
+    font-weight: 600;
 }
 
 /* SECTION 2 cards */
@@ -318,21 +308,22 @@ header .navbar nav ul li a{
 }
 
 .section_2 .cards .card .description{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-family: 'Bold'; 
     color: var(--black);
     margin-top: 40px;
+    padding: 0 20px;
 }
 
 
 /* SECTION 3 */
 
 .section_header{
-    font-size: 3rem;
-    color: var(--black);
-    margin-bottom: 100px;
+    font-size: 2.6rem;
+    color: var(--black_bold);
+    margin-bottom: 60px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 400;
     &::after{
         content: '';
         display: block;
@@ -429,20 +420,25 @@ header .navbar nav ul li a{
 }
 
 .section_4 .cards .card .name{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--black);
     font-family: 'Bold';
     margin-top: 40px;
     margin-bottom: 90px;
     text-align: center;
+    font-weight: 600;
+    position: absolute;
+    width: calc((100vw - 400px) * 0.21);
 }
 
 .section_4 .cards .card .price{
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: 400;
     color: var(--black);
     font-family: 'Bold';
     margin-bottom: 10px;
     text-align: center;
+    margin-top: calc(1.2rem + 140px);
 
     &::after{
         content: ' руб.';
@@ -452,16 +448,17 @@ header .navbar nav ul li a{
 }
 
 .section_4 .cards .card .description{
-    font-size: 1.4rem;
     color: var(--black);
     font-family: 'Regular';
     text-align: center;
-    margin: 2vw;
+    margin: 1vw;
 }
 
 .section_4 .cards .card .description li{
     margin-bottom: 10px;
     text-align: left;
+    font-size: 1.3rem;
+    font-weight: 250;
 }
 
 .section_4 .cards .card .button_div{
@@ -504,9 +501,9 @@ header .navbar nav ul li a{
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: var(--black);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     position: relative;
     padding-left: 30px; 
     &::before {
@@ -551,14 +548,14 @@ header .navbar nav ul li a{
 }
 
 .section_6 .experience .case .emphasis{
-    font-size: 4rem;
+    font-size: 3.2rem;
     color: var(--dark);
     font-weight: 500;
     text-align: center;
 }
 
 .section_6 .experience .case .description{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--black);
     font-family: 'Regular';
     text-align: center;
