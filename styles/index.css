@@ -287,12 +287,12 @@ header .navbar nav ul li a{
     justify-content: space-between;
     width: 100%;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
 }
 
 .section_2 .cards .card{
     width: 15vw;
-    height: 400px;
+    max-hotfixheight: 400px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
