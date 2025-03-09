@@ -4,31 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" href="images/photo_2024-05-18_02-10-51.jpg" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="static/fonts/stylesheet.css">
+    <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
     <header>
         <div class="before_navbar">
-            <p><u>Лично в Москве и по всему миру</u></p>
+            <p><i class='bx bxs-home navbar_icon'></i><u>Лично в Москве и по всему миру</u></p>
             <div class="others">
                 <ul>
-                    <li>Часы работы c 12:00 - 22:00</li>
-                    <li><u>+7 (999) 999 99 99</u></li>
-                    <li>w</li>
-                    <li>tg</li>
+                    <li><i class='bx bxs-briefcase-alt-2 navbar_icon'></i>Часы работы c 12:00 - 22:00</li>
+                    <li><i class='bx bxs-phone navbar_icon' ></i><u>+7 (999) 999 99 99</u></li>
+                    <li><img class="header_whatsapp" src="static/logos/whatsapp.svg" alt=""></li>
+                    <li><img class="header_tg" src="static/logos/telegram.svg" alt=""></li>
                 </ul>
                 <button>Записаться на консультацию</button>
             </div>
         </div>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
         <div class="navbar">
             <h1>My Website</h1>
             <nav>
                 <ul>
-                    <li><a href="#">C ЧЕМ Я РАБОТАЮ</a></li>
-                    <li><a href="#">КАК Я РАБОТАЮ</a></li>
-                    <li><a href="#">СТОИМОСТЬ</a></li>
-                    <li><a href="#">КВАЛИФИКАЦИЯ</a></li>
-                    <li><a href="#">КОНТАКТЫ</a></li>
+                    <li><a href="pages/with_what.html">C ЧЕМ Я РАБОТАЮ</a></li>
+                    <li><a href="pages/how.html">КАК Я РАБОТАЮ</a></li>
+                    <li><a href="pages/price.html">СТОИМОСТЬ</a></li>
+                    <li><a href="pages/qualification.html">КВАЛИФИКАЦИЯ</a></li>
+                    <li><a href="pages/contacts.html">КОНТАКТЫ</a></li>
+                    <li class="sign_up_dop"><button>Записаться на консультацию</button></li>
                 </ul>
             </nav>
         </div>
@@ -221,8 +233,8 @@
         <p>ИП крутая психолог</p>
         <p>ОРГНИП ИНН</p>
         <div class="buttons">
-            <button>w</button>
-            <button>tg</button>
+            <button><img class="whatsapp_footer" src="static/logos/whatsapp.svg" alt=""></button>
+            <button><img class="tg_footer" src="static/logos/telegram.svg" alt=""></button>
         </div>
     </footer>
     <script src="scripts/index.js"></script>
