@@ -39,8 +39,19 @@
                     <li><a href="pages/how.html">КАК Я РАБОТАЮ</a></li>
                     <li><a href="pages/price.html">СТОИМОСТЬ</a></li>
                     <li><a href="pages/qualification.html">КВАЛИФИКАЦИЯ</a></li>
-                    <li><a href="pages/contacts.html">КОНТАКТЫ</a></li>
-                    <li class="sign_up_dop"><button>Записаться на консультацию</button></li>
+                    <li class="contacts"><a href="pages/contacts.html">КОНТАКТЫ</a></li>
+                    <li class="sign_up_dop">
+                        <ul>
+                            <li class="dop_contacts"><i class='bx bxs-briefcase-alt-2 navbar_icon'></i>Часы работы c 12:00 - 22:00</li>
+                            <li class="dop_contacts">
+                                <i class='bx bxs-phone navbar_icon' ></i><u>+7 (999) 999 99 99</u>
+                                <img class="header_whatsapp" src="static/logos/whatsapp.svg" alt="">
+                                <img class="header_tg" src="static/logos/telegram.svg" alt="">
+                            </li>
+
+                        </ul>
+                        <button>Записаться на консультацию</button>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -184,7 +195,7 @@
                     Институт Практической Психологии и Психоанализа, программа «Консультативная психология и психодинамическая психотерапия»;
                 </li>
                 <li>
-                    Институт Практической Психологии и Психоанализа, программа «Трансгенерационная передача травмы(психоаналитический взгляд)»;
+                    Институт Практической Психологии и Психоанализа, программа «Трансгенерационная передача травмы (психоаналитический взгляд)»;
                 </li>
                 <li>
                     Институт Практической Психологии и Психоанализа, программа «Посттравматическое стрессовое расстройство: теория и практические методы работы. Израильский опыт»;
@@ -206,7 +217,20 @@
                 </li>
             </ul>
             <div class="diploms">
-
+                <div class="slider">
+                    <!-- Стрелка "Назад" -->
+                    <button class="slider-arrow left-arrow" onclick="prevSlide()">&#10094;</button>
+                  
+                    <!-- Контейнер для фотографий -->
+                    <div class="slider-container">
+                      <div class="slide active" style="background-color: red;"></div>
+                      <div class="slide" style="background-color: green;"></div>
+                      <div class="slide" style="background-color: blue;"></div>
+                    </div>
+                  
+                    <!-- Стрелка "Вперёд" -->
+                    <button class="slider-arrow right-arrow" onclick="nextSlide()">&#10095;</button>
+                  </div>
             </div>
         </div>
     </div>

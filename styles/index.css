@@ -10,6 +10,7 @@
     box-sizing: border-box;
     font-family: "Gilroy";
     font-size: 0.9rem;
+    -webkit-tap-highlight-color: transparent;
 }
 
 html{
@@ -18,12 +19,12 @@ html{
 
 :root{
     --light: #efe6de;
-    --dark: #5c828f;
+    --dark: #5b95a8;
     --bobr: #bb9a89;
     --light_blue: #bbcfd8;
     --dark_bobr: #ac7f62;
-    --blue: #1cb8c0;
-    --blue_hover: #6fccd4;
+    --blue: #73afc3;
+    --blue_hover: #47a1be;
     --black: rgb(90, 90, 90);
     --black_bold: rgb(49, 49, 49);
 }
@@ -446,6 +447,54 @@ html{
     text-align: center;
 }
 
+.slider {
+    position: relative;
+    max-width: 600px; /* Максимальная ширина слайдера */
+    margin: 0 auto;
+    overflow: hidden;
+    height: 100%;
+    width: 100%
+}
+
+.slider-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    height: 100%;
+    min-width: 100%; /* Каждая фотография занимает всю ширину контейнера */
+    display: none; /* Скрываем все фотографии по умолчанию */
+}
+
+.slide.active {
+    display: block; /* Показываем активную фотографию */
+}
+
+.slider-arrow {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-50%);
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+    z-index: 10;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+
 /* FOOTER */
 
 footer{
@@ -494,5 +543,314 @@ button:active{
 @media (hover) {
     button:hover{
         background-color: var(--blue_hover) !important;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .section_1 {
+        padding: 50px 50px;
+    }
+
+    .section_2 .description{
+        padding: 0 50px;
+    }
+
+    .section_3 .advantages .advantage .description{
+        width: calc(100% - 120px);
+    }
+
+    .section_4 .cards .card{
+        width: 35%;
+
+        .name{
+            font-size: 1.3rem !important;
+        }
+        .price{
+            font-size: 1.2rem !important;
+        }
+    }
+
+    .section_5{
+        padding: 50px 50px;
+    }
+
+    .section_6 .experience .case .emphasis{
+        font-size: 2.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .section_1 {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .section_1 .image_div{
+        width: calc(100% - 40px);                      
+        margin: 40px 0;
+        margin-top: 0;
+        height: 80vh;
+        justify-content: center;
+        transform: translateX(8vw);
+    }
+
+    .section_1 .main_text_div{
+        position: relative;
+        margin: 0;
+        text-align: center;
+        .name{
+            position: absolute;
+            top: -20vh;
+            left: 10vw;
+            color: #fff;
+        }
+        .description{
+            position: absolute;
+            top: -15vh;
+            left: 10vw;
+            color: #fff;
+        }
+        .text{
+            margin: 10px 0;
+            padding: 0;
+            text-align: left;
+        }
+        
+    }
+
+    .section_2{
+        padding: 50px;
+
+        .cards .card .description{
+            padding: 0 20px;
+            font-size: 1.2rem;
+        }
+    }
+
+    .section_3{
+        padding: 50px;
+
+        .advantages{
+            justify-content: center;
+        }
+
+        .advantages .advantage{
+            min-width: 300px;
+        }
+
+        .advantages .advantage .description .name{
+            font-size: 1.2rem;
+        }
+
+        .advantages .advantage .description .text{
+            font-size: 1rem;
+        }
+    }
+
+    .section_4 .cards{
+        flex-direction: column;
+    }
+
+    .section_4 .cards .card{
+        width: auto;
+        margin: 0;
+        margin-bottom: 40px;
+        
+
+        .name{
+            width: 40vw;
+        }
+    }
+
+    .section_5 .main_div{
+        padding: 50px 20px;
+        flex-direction: column;
+
+        ul{
+            margin: 0;
+            padding: 0;
+            width: 80vw
+        }
+        .diploms{
+            height: 80vh;
+            width: auto;
+        }
+    }
+
+    .section_6{
+        padding: 50px 20px;
+    }
+
+    .section_6 .experience{
+        flex-direction: column;
+
+        .case{
+            margin: 0;
+            margin-bottom: 40px;
+            width: auto;
+            text-align: center;
+
+            .emphasis{
+                font-size: 2.5rem;
+                width: auto
+            }
+        }
+    }
+
+    
+}
+
+@media  screen and (max-width: 600px) {
+    .section_1{
+        padding: 50px 10px;
+        
+        .image_div{
+            width: calc(100% - 20px);
+        }
+
+        .main_text_div{
+            .name{
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    .section_2 .description{
+        padding: 0;
+    }
+
+    .section_2 .cards{
+        flex-direction: column;
+
+        .card{
+            width: auto;
+
+            .image{
+                width: 50vw;
+                height: 50vw;
+            }
+
+            .description{
+                max-width: 70%;
+                margin: 10px 0;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .section_4{
+        padding: 50px 10px;
+
+        .cards{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cards .card{
+            width: auto;
+            max-width: 70vw;
+        }
+    }
+
+    .section_5{
+        padding: 50px 10px;
+
+        .main_div .diploms{
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section_1{
+        padding: 15px 5px;
+    }
+    .section_1 .main_text_div .name{
+        font-size: 1.5rem;
+        width: 70vw;
+        transform: translate(-3vw, 10vh);
+    }
+    .section_1 .main_text_div .description{
+        font-size: 1.4rem;
+        width: 70vw;
+        transform: translate(-14vw, 8vh);
+    }
+
+    .section_1 .image_div{
+        height: auto;
+        margin: 0;
+
+        .behind_image{
+            transform: translate(15vw, 5vw);
+        }
+        *{
+            height: 50vh !important;
+            width: calc(90vw - 20px) !important;
+            transform: translateX(-5vw);
+        }
+    }
+
+    .section_1 .main_text_div{
+        width: auto;
+        padding: 0 10px;
+        .text{
+            padding: 0 10px;
+            font-size: 0.8rem;
+        }
+    }   
+
+    .section_header{
+        padding: 0;
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .section_2{
+        padding: 15px 5px;
+    }
+
+    .section_2 .description *{
+        font-size: 0.8rem !important;
+        margin-bottom: 5px;
+    }
+
+    .section_3{
+        padding: 15px 5px;
+    }
+
+    .section_3 .advantages{
+        width: auto;
+    }
+
+    .section_3 .advantages .advantage{
+        flex-direction: column;
+        align-items: center;
+        min-width: 200px;
+
+        .description{
+            width: auto;
+            text-align: center;
+            margin: 0;
+
+            .name{
+                padding-top: 10vw;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .section_4 .cards .card{
+        width: auto;
+        max-width: 90vw;
+        .name{
+            width: 50vw;
+        }
+    }
+
+    .section_5 .main_div .diploms{
+        height: 50vh !important;
     }
 }
