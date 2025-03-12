@@ -753,7 +753,7 @@ button:active{
 
         .cards .card{
             width: auto;
-            max-width: 70vw;
+            max-width: 50vw;
         }
     }
 
@@ -849,7 +849,7 @@ button:active{
 
     .section_4 .cards .card{
         width: fit-content;
-        max-width: 90vw;
+        max-width: 70vw;
         .name{
             width: 50vw;
         }
