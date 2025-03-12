@@ -108,7 +108,7 @@ html{
 }
 
 .section_1 .image_div .behind_image{
-    width: 75%;
+    width: 90%;
     height: 100%;
     background-color: var(--light_blue);
     position: relative;
@@ -118,7 +118,7 @@ html{
 }
 
 .section_1 .image_div .image{
-    width: 75%;
+    width: 90%;
     height: 100%;
     background-color: var(--bobr);
     position: absolute;
@@ -826,12 +826,14 @@ button:active{
 
     .section_3 .advantages{
         width: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .section_3 .advantages .advantage{
         flex-direction: column;
         align-items: center;
-        min-width: 200px;
+        min-width: 150px;
 
         .description{
             width: auto;
@@ -839,14 +841,14 @@ button:active{
             margin: 0;
 
             .name{
-                padding-top: 10vw;
+                padding-top: 2vw;
                 font-size: 1rem;
             }
         }
     }
 
     .section_4 .cards .card{
-        width: auto;
+        width: fit-content;
         max-width: 90vw;
         .name{
             width: 50vw;
