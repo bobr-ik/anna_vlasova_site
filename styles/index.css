@@ -48,6 +48,10 @@ html{
     margin-right: 10%;
 }
 
+.section_1 .main_text_div .main{
+    position: relative;
+}
+
 .section_1 .main_text_div h1{
     font-size: 2.3rem;
     font-weight: 500;
@@ -597,20 +601,18 @@ button:active{
     }
 
     .section_1 .main_text_div{
-        position: relative;
         margin: 0;
         text-align: center;
-        .name{
-            position: absolute;
+        position: relative;
+        .me{
+            position: absolute !important;
             top: -20vh;
             left: 10vw;
-            color: #fff;
-        }
-        .description{
-            position: absolute;
-            top: -15vh;
-            left: 10vw;
-            color: #fff;
+            height: 400px;
+            text-align: left;
+            *{
+                color: #fff
+            }
         }
         .text{
             margin: 10px 0;
@@ -768,23 +770,24 @@ button:active{
     .section_1{
         padding: 15px 5px;
     }
-    .section_1 .main_text_div .name{
-        font-size: 1.5rem;
-        width: 70vw;
-        transform: translate(-3vw, 10vh);
-    }
-    .section_1 .main_text_div .description{
-        font-size: 1.4rem;
-        width: 70vw;
-        transform: translate(-14vw, 8vh);
+    .section_1 .main_text_div .me{
+        position: absolute !important;
+        top: -10vh;
+        left: 10vw;
+        height: 400px;
+        text-align: left;
+        *{
+            color: #fff
+        }
     }
 
     .section_1 .image_div{
         height: auto;
         margin: 0;
+        width: calc(90vw - 20px);
 
         .behind_image{
-            transform: translate(15vw, 5vw);
+            transform: translate(10vw, 5vw);
         }
         *{
             height: 50vh !important;
