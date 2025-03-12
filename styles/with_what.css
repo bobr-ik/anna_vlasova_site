@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+    font-size: 0.9rem;
+}
+
+html{
+    scrollbar-width: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+:root{
+    --light: #efe6de;
+    --dark: #5b95a8;
+    --bobr: #bb9a89;
+    --light_blue: #bbcfd8;
+    --dark_bobr: #ac7f62;
+    --blue: #73afc3;
+    --blue_hover: #47a1be;
+    --black: rgb(90, 90, 90);
+    --black_bold: rgb(49, 49, 49);
+    --cream: #fff8f3;
+}
+
+
+
+.cases{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 100px 0; */
+}
+
+.cases .case{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+    padding: 50px 0;
+}
+
+.cases .case .image_div{
+    width: 40vw;
+    padding-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.cases .case .image_div .image{
+    width: 400px;
+    height: 400px;
+    margin: 0 100px;
+    background-color: var(--bobr);
+    border-radius: 50%;
+}
+
+.cases .case .text{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    h1{
+        font-size: 2.6rem;
+        color: var(--black_bold);
+        margin-bottom: 60px;
+        text-align: left;
+        font-weight: 400;
+        text-align: center;
+        max-width: 40vw;
+        &::after{
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: var(--blue);
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        list-style: none;
+
+        li{
+            font-size: 1.4rem;
+            color: var(--black);
+            line-height: 100%;
+            position: relative;
+            padding-left: 30px; 
+            &::before {
+                content: "•"; /* Кастомный маркер (точка) */
+                color: var(--bobr); /* Цвет маркера */
+                font-size: 2rem; /* Размер маркера */
+                position: absolute;
+                left: 0;
+                top: 0;
+                transform: translateY(calc(-50% + 0.84rem));
+            }
+        }
+    }
+
+}
+
+.cases .left{
+    flex-direction: row-reverse;
+    background-color: var(--cream);
+
+    .text{
+        align-items: center;
+    }
+
+    .image_div{
+        align-items: flex-start;
+        padding-right: 10vw;
+        padding-left: 0;
+    }
+}
+
+.sign_up_button{
+    margin-top: 20px;
+    padding: 20px 50px;
+    background-color: var(--dark);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: calc(0.6rem + 20px);
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    bottom: 5vw;
+    transform: translateX(-50%);
+
+}
+
+.sign_up{
+    padding: 2vw 10vw 10vw 10vw;
+    background-color: var(--blue);
+    color: #fff;
+    position: relative;
+
+    .info{
+
+        h1{
+            font-size: 3rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+            max-width: 60%;
+        }
+
+        i{
+            font-size: 2rem;
+            margin: 20px 5px 20px 0;
+        }
+        .phone{
+            display: inline-block !important;
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin: 20px 0;
+            text-decoration: underline;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            width: auto;
+
+            &:active{
+                color: var(--dark);
+            }
+
+            @media (hover) {
+                &:hover{
+                    color: var(--dark);
+                }
+                
+            }
+
+
+        }
+
+        button{
+            height: 10vh;
+            background-color: var(--dark);
+            border: none;
+            cursor: pointer;
+            border-radius: 50%;
+            margin: 5px;
+            width: 60px;
+            height: 60px;
+        }
+
+        .whatsapp{
+            height: 50%;
+            transform: translate(3%, 3%);
+        }
+        .tg{
+            height: 42%;
+            transform: translate(-9%, 4%);
+        }
+    }
+
+}
+
+button:active{
+    background-color: var(--blue_hover) !important;
+}
+@media (hover) {
+    button:hover{
+        background-color: var(--blue_hover) !important;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .cases .case {
+        flex-direction: column;
+
+        .image_div{
+            padding-right: 0;
+            padding-left: 0;
+            width: 100%;
+            align-items: center;    
+
+            image{
+                width: 50vw !important;
+                height: 50vh !important;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+
+    .sign_up{
+        max-height: none !important;
+        height: auto !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .cases .case .image_div{
+        width: 100%;
+        padding: 0 5vw;
+
+        .image{
+            width: 80vw !important;
+            height: 80vw !important;
+        }
+    }
+    .cases .case .text{
+        width: 100%;
+        padding: 0 5vw;
+
+        h1{
+            font-size: 2.2rem;
+            max-width: 90vw;
+        }
+    }
+
+    .sign_up{
+        padding: 5vw;
+        text-align: center;
+        h1{
+            font-size: 1.7rem;
+            max-width: 90vw !important;
+            text-align: center;
+        }
+        .buttons{
+            text-align: center;
+        }
+        .info{
+            text-align: center;
+        }
+        .sign_up_button{
+            position: static;
+            transform: none;
+        }
+
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .sign_up h1{
+        font-size: 1.5rem !important;
+    }
+    .sign_up .info .phone{
+        font-size: 1.5rem !important;
+    }
+}
