@@ -849,7 +849,7 @@ button:active{
 
     .section_4 .cards .card{
         width: fit-content;
-        max-width: 70vw;
+        width: 70vw;
         .name{
             width: 50vw;
         }
