@@ -267,7 +267,7 @@ button:active{
         padding: 0 5vw;
 
         h1{
-            font-size: 2.2rem;
+            font-size: 1.5rem;
             max-width: 90vw;
         }
     }
@@ -276,7 +276,7 @@ button:active{
         padding: 5vw;
         text-align: center;
         h1{
-            font-size: 1.7rem;
+            font-size: 1.7rem !important;
             max-width: 90vw !important;
             text-align: center;
         }
@@ -285,6 +285,9 @@ button:active{
         }
         .info{
             text-align: center;
+        }
+        p{
+            font-size: 1.5rem !important;
         }
         .sign_up_button{
             position: static;
@@ -296,9 +299,9 @@ button:active{
 
 @media screen and (max-width: 300px) {
     .sign_up h1{
-        font-size: 1.5rem !important;
+        font-size: 1.2rem !important;
     }
     .sign_up .info .phone{
-        font-size: 1.5rem !important;
+        font-size: 1.2rem !important;
     }
 }
