@@ -7,8 +7,11 @@ function showSlide(index) {
     slide.classList.remove('active');
   });
 
+
   // Показываем текущий слайд
-  slides[index].classList.add('active');
+  if (slides[index]) {
+    slides[index].classList.add('active');
+  }
 }
 
 function nextSlide() {
@@ -23,3 +26,14 @@ function prevSlide() {
 
 // Показываем первый слайд при загрузке страницы
 showSlide(currentSlide);
+
+
+function openPopup() {
+    const popup = document.querySelector('.popup');
+    popup.style.display = 'flex';
+  }
+  
+  function closePopup() {
+    const popup = document.querySelector('.popup');
+    popup.style.display = 'none';
+  }

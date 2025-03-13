@@ -8,19 +8,21 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../static/fonts/stylesheet.css">
     <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/qualification.css">
+    <link rel="stylesheet" href="../styles/index.css">
 </head>
 <body>
     <header>
         <div class="before_navbar">
-            <p><i class='bx bxs-home navbar_icon'></i><u>Лично в Москве и по всему миру</u></p>
+            <p><i class='bx bxs-home navbar_icon'></i><a href="../pages/contacts.html">Лично в Москве и по всему миру</a></p>
             <div class="others">
                 <ul>
                     <li><i class='bx bxs-briefcase-alt-2 navbar_icon'></i>Часы работы c 12:00 - 22:00</li>
-                    <li><i class='bx bxs-phone navbar_icon' ></i><u>+7 (999) 999 99 99</u></li>
-                    <li><img class="header_whatsapp" src="static/logos/whatsapp.svg" alt=""></li>
-                    <li><img class="header_tg" src="static/logos/telegram.svg" alt=""></li>
+                    <li><i class='bx bxs-phone navbar_icon' ></i><a href="tel:+79055377637">+7 (905) 537 76 37</a></li>
+                    <li><a href="https://wa.me/79055377637"><img class="header_whatsapp" src="../static/logos/whatsapp.svg" alt=""></a></li>
+                    <li><a href="https://t.me/Vlasova_Boriskovskaya"><img class="header_tg" src="../static/logos/telegram.svg" alt=""></a></li>
                 </ul>
-                <button>Записаться на консультацию</button>
+                <button onclick="openPopup()">Записаться на консультацию</button>
             </div>
         </div>
 
@@ -39,7 +41,7 @@
                     <li><a href="price.html">СТОИМОСТЬ</a></li>
                     <li><a href="qualification.html"><b>КВАЛИФИКАЦИЯ</b></a></li>
                     <li><a href="contacts.html">КОНТАКТЫ</a></li>
-                    <li class="sign_up_dop"><button>Записаться на консультацию</button></li>
+                    <li class="sign_up_dop"><button onclick="openPopup()">Записаться на консультацию</button></li>
                 </ul>
             </nav>
         </div>
@@ -50,5 +52,133 @@
         <h1>Квалификация</h1>
         <h2><a href="../index.html">Главная</a> / Квалификация</h2>
     </div>
+
+    
+
+    <div class="section_5">
+        <h1 class="section_header">Квалификация</h1>
+        <div class="main_div">
+            <ul>
+                <li>
+                    Институт Практической Психологии и Психоанализа, программа «Консультативная психология и психодинамическая психотерапия»;
+                </li>
+                <li>
+                    Институт Практической Психологии и Психоанализа, программа «Трансгенерационная передача травмы (психоаналитический взгляд)»;
+                </li>
+                <li>
+                    Институт Практической Психологии и Психоанализа, программа «Посттравматическое стрессовое расстройство: теория и практические методы работы. Израильский опыт»;
+                </li>
+                <li>
+                    Международный институт развития когнитивно-поведенческой терапии, программа «Системный когнитивно-поведенческий коучинг»;
+                </li>
+                <li>
+                    Международный институт развития когнитивно-поведенческой терапии, программа «Базовый курс когнитивно-поведенческой терапии и психологического консультирования» (в наст.время);
+                </li>
+                <li>
+                    Магистратура Московский институт психоанализа , профиль «Когнитивно-поведенческая психотерапия»(в наст.время)
+                </li>
+                <li>
+                    Институт Практической Психологии и Психоанализа, программа повышения квалификации «Стажировка» (в наст.время);
+                </li>
+                <li>
+                    Регулярное участие в семинарах, конференциях, образовательных программах
+                </li>
+            </ul>
+            <div class="diploms">
+                <div class="slider">
+                    <!-- Стрелка "Назад" -->
+                    <button class="slider-arrow left-arrow" onclick="prevSlide()">&#10094;</button>
+                  
+                    <!-- Контейнер для фотографий -->
+                    <div class="slider-container">
+                        <div class="slide active" style="background-image: url(../static/images/diplom1.jpg);"></div>
+                        <div class="slide active" style="background-image: url(../static/images/diplom2.jpg);"></div>
+                    </div>
+                  
+                    <!-- Стрелка "Вперёд" -->
+                    <button class="slider-arrow right-arrow" onclick="nextSlide()">&#10095;</button>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="section_2">
+        <h1 class="section_header">С чем я работаю</h1>
+        <div class="description">
+            <h2 style="text-transform: uppercase;">
+                Знание разных методик позволяет мне подобрать к каждому клиенту индивидуальный подход и решать широкий спектр проблем.
+            </h2>
+            <h3 style="text-transform: uppercase;">
+                В своей работе я применяю 
+                <br>психоаналитический подход, 
+                <br>методики эмоционально-образной терапии, 
+                <br>когнитивно-поведенческой терапии(КПТ),
+                <br>работа с внутренним ребенком, коучинг и тд.
+            </h3>
+        </div>
+        <div class="cards">
+            <a class="card" href="../pages/with_what.html#family">
+                <div class="image" style="background-image: url(../static/images/family_problems.jpg);"></div>
+                <p class="description">Семейные трудности</p>
+            </a>
+            <a class="card" href="../pages/with_what.html#lovers">
+                <div class="image" style="background-image: url(../static/images/lovers.jpg);"></div>
+                <p class="description">Сложности в отношениях</p>
+            </a>
+            <a class="card" href="../pages/with_what.html#self">
+                <div class="image" style="background-image: url(../static/images/self_growth.jpg);"></div>
+                <p class="description">Личностное развитие и самооценка</p>
+            </a>
+            <a class="card" href="../pages/with_what.html#emotions">
+                <div class="image" style="background-image: url(../static/images/emotions.jpg);"></div>
+                <p class="description">Эмоциональные проблемы</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="sign_up">
+        <div class="info">
+            <h1>Запишитесь на консультацию или задайте вопрос</h1>
+            <div class="buttons">
+                <button><a href="https://wa.me/79055377637"><img class="whatsapp" src="../static/logos/whatsapp.svg" alt=""></a></button>
+                <button><a href="https://t.me/Vlasova_Boriskovskaya"><img class="tg" src="../static/logos/telegram.svg" alt=""></a></button>
+            </div>
+            <i class='bx bxs-phone navbar_icon' ></i><a class="phone" href="tel:+79055377637">+7 999 999 99 99</a>
+        </div>
+        <button class="sign_up_button" onclick="openPopup()">Записаться на консультацию</button>
+    </div>
+
+    <footer>
+        <p>ИП крутая психолог</p>
+        <p>ОРГНИП ИНН</p>
+        <div class="buttons">
+            <button><a href="https://wa.me/79055377637"><img class="whatsapp_footer" src="../static/logos/whatsapp.svg" alt=""></a></button>
+            <button><a href="https://t.me/Vlasova_Boriskovskaya"><img class="tg_footer" src="../static/logos/telegram.svg" alt=""></a></button>
+        </div>
+    </footer>
+
+    <div class="popup">
+        <div class="popup_content">
+            <h1><p>ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</p><i class="bx bx-x" onclick="closePopup()"></i></h1>
+            <div class="buttons">
+                <div class="button">
+                    <p>Написать в Whatsapp</p>
+                    <button><a href="https://wa.me/79055377637"><img class="whatsapp_popup" src="../static/logos/whatsapp.svg" alt=""></a></button>
+                </div>
+                <div class="button">
+                    <p>Написать в Telegram</p>
+                    <button><a href="https://t.me/Vlasova_Boriskovskaya"><img class="tg_popup" src="../static/logos/telegram.svg" alt=""></a></button>
+                </div>
+                <div class="button">
+                    <p>Позвонить</p>
+                    <p class="phone"><i class='bx bxs-phone'></i><a href="tel:+79055377637">+7 (905) 537-76-37</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/index.js"></script>
 </body>
 </html>

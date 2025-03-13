@@ -13,15 +13,15 @@
 <body>
     <header>
         <div class="before_navbar">
-            <p><i class='bx bxs-home navbar_icon'></i><u>Лично в Москве и по всему миру</u></p>
+            <p><i class='bx bxs-home navbar_icon'></i><a href="../pages/contacts.html">Лично в Москве и по всему миру</a></p>
             <div class="others">
                 <ul>
                     <li><i class='bx bxs-briefcase-alt-2 navbar_icon'></i>Часы работы c 12:00 - 22:00</li>
-                    <li><i class='bx bxs-phone navbar_icon' ></i><u>+7 (999) 999 99 99</u></li>
-                    <li><img class="header_whatsapp" src="static/logos/whatsapp.svg" alt=""></li>
-                    <li><img class="header_tg" src="static/logos/telegram.svg" alt=""></li>
+                    <li><i class='bx bxs-phone navbar_icon' ></i><a href="tel:+79055377637">+7 (905) 537-76-37</a></li>
+                    <li><a href="https://wa.me/79055377637"><img class="header_whatsapp" src="../static/logos/whatsapp.svg" alt=""></a></li>
+                    <li><a href="https://t.me/Vlasova_Boriskovskaya"><img class="header_tg" src="../static/logos/telegram.svg" alt=""></a></li>
                 </ul>
-                <button>Записаться на консультацию</button>
+                <button onclick="openPopup()">Записаться на консультацию</button>
             </div>
         </div>
 
@@ -40,7 +40,7 @@
                     <li><a href="price.html">СТОИМОСТЬ</a></li>
                     <li><a href="qualification.html">КВАЛИФИКАЦИЯ</a></li>
                     <li><a href="contacts.html">КОНТАКТЫ</a></li>
-                    <li class="sign_up_dop"><button>Записаться на консультацию</button></li>
+                    <li class="sign_up_dop"><button onclick="openPopup()">Записаться на консультацию</button></li>
                 </ul>
             </nav>
         </div>
@@ -54,9 +54,9 @@
     
     <main>
         <div class="cases">
-            <div class="case">
+            <div class="case" id="family">
                 <div class="image_div">
-                    <div class="image"></div>
+                    <div class="image" style="background-image: url(../static/images/family_problems.jpg);"></div>
                 </div>
                 <div class="text">
                     <h1 class="name">Семейные трудности</h1>
@@ -70,9 +70,9 @@
                 </div>
             </div>
 
-            <div class="case left">
+            <div class="case left" id="lovers">
                 <div class="image_div">
-                    <div class="image"></div>
+                    <div class="image" style="background-image: url(../static/images/lovers.jpg);"></div>
                 </div>
                 <div class="text">
                     <h1 class="name">Сложности в отношениях</h1>
@@ -85,9 +85,9 @@
                 </div>
             </div>
 
-            <div class="case">
+            <div class="case" id="self">
                 <div class="image_div">
-                    <div class="image"></div>
+                    <div class="image" style="background-image: url(../static/images/self_growth.jpg);"></div>
                 </div>
                 <div class="text">
                     <h1 class="name">Личностное развитие и рост</h1>
@@ -99,9 +99,9 @@
                 </div>
             </div>
 
-            <div class="case left">
+            <div class="case left" id="emotions">
                 <div class="image_div">
-                    <div class="image"></div>
+                    <div class="image" style="background-image: url(../static/images/emotions.jpg);"></div>
                 </div>
                 <div class="text">
                     <h1 class="name">Эмоциональные проблемы</h1>
@@ -116,12 +116,13 @@
             <div class="info">
                 <h1>Запишитесь на консультацию или задайте вопрос</h1>
                 <div class="buttons">
-                    <button><img class="whatsapp" src="../static/logos/whatsapp.svg" alt=""></button>
-                    <button><img class="tg" src="../static/logos/telegram.svg" alt=""></button>
+                    <button><a href="https://wa.me/79055377637"><img class="whatsapp" src="../static/logos/whatsapp.svg" alt=""></a></button>
+                    <button><a href="https://t.me/Vlasova_Boriskovskaya"><img class="tg" src="../static/logos/telegram.svg" alt=""></a></button>
                 </div>
-                <i class='bx bxs-phone navbar_icon' ></i><p class="phone">+7 999 999 99 99</p>
+                <link rel="stylesheet" href="../styles/header.css">
+                <i class='bx bxs-phone navbar_icon' ></i><p class="phone"><a href="tel:+79055377637">+7 (905) 537-76-37</a></p>
             </div>
-            <button class="sign_up_button">Записаться на консультацию</button>
+            <button class="sign_up_button" onclick="openPopup()">Записаться на консультацию</button>
         </div>
     </main>
     
@@ -130,9 +131,30 @@
         <p>ИП крутая психолог</p>
         <p>ОРГНИП ИНН</p>
         <div class="buttons">
-            <button><img class="whatsapp_footer" src="../static/logos/whatsapp.svg" alt=""></button>
-            <button><img class="tg_footer" src="../static/logos/telegram.svg" alt=""></button>
+            <button><a href="https://wa.me/79055377637"><img class="whatsapp_footer" src="../static/logos/whatsapp.svg" alt=""></a></button>
+            <button><a href="https://t.me/Vlasova_Boriskovskaya"><img class="tg_footer" src="../static/logos/telegram.svg" alt=""></a></button>
         </div>
     </footer>
+    <div class="popup">
+        <div class="popup_content">
+            <h1><p>ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</p><i class="bx bx-x" onclick="closePopup()"></i></h1>
+            <div class="buttons">
+                <div class="button">
+                    <p>Написать в Whatsapp</p>
+                    <button><a href="https://wa.me/79055377637"><img class="whatsapp_popup" src="../static/logos/whatsapp.svg" alt=""></a></button>
+                </div>
+                <div class="button">
+                    <p>Написать в Telegram</p>
+                    <button><a href="https://t.me/Vlasova_Boriskovskaya"><img class="tg_popup" src="../static/logos/telegram.svg" alt=""></a></button>
+                </div>
+                <div class="button">
+                    <p>Позвонить</p>
+                    <p class="phone"><i class='bx bxs-phone'></i><a href="tel:+79055377637">+7 (905) 537-76-37</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/index.js"></script>
 </body>
 </html>

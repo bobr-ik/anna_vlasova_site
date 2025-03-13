@@ -13,15 +13,15 @@
 <body>
     <header>
         <div class="before_navbar">
-            <p><i class='bx bxs-home navbar_icon'></i><u>Лично в Москве и по всему миру</u></p>
+            <p><i class='bx bxs-home navbar_icon'></i><a href="../pages/contacts.html">Лично в Москве и по всему миру</a></p>
             <div class="others">
                 <ul>
                     <li><i class='bx bxs-briefcase-alt-2 navbar_icon'></i>Часы работы c 12:00 - 22:00</li>
-                    <li><i class='bx bxs-phone navbar_icon' ></i><u>+7 (999) 999 99 99</u></li>
-                    <li><img class="header_whatsapp" src="static/logos/whatsapp.svg" alt=""></li>
-                    <li><img class="header_tg" src="static/logos/telegram.svg" alt=""></li>
+                    <li><i class='bx bxs-phone navbar_icon' ></i><a href="tel:+79055377637">+7 (905) 537-76-37</й></li>
+                    <li><a href="https://wa.me/79055377637"><img class="header_whatsapp" src="static/logos/whatsapp.svg" alt=""></a></li>
+                    <li><a href="https://t.me/Vlasova_Boriskovskaya"><img class="header_tg" src="static/logos/telegram.svg" alt=""></a></li>
                 </ul>
-                <button>Записаться на консультацию</button>
+                <button onclick="openPopup()">Записаться на консультацию</button>
             </div>
         </div>
 
@@ -45,12 +45,12 @@
                             <li class="dop_contacts"><i class='bx bxs-briefcase-alt-2 navbar_icon'></i>Часы работы c 12:00 - 22:00</li>
                             <li class="dop_contacts">
                                 <i class='bx bxs-phone navbar_icon' ></i><u>+7 (999) 999 99 99</u>
-                                <img class="header_whatsapp" src="static/logos/whatsapp.svg" alt="">
+                                <a href="https://wa.me/79055377637"><img class="header_whatsapp" src="static/logos/whatsapp.svg" alt=""></a>
                                 <img class="header_tg" src="static/logos/telegram.svg" alt="">
                             </li>
 
                         </ul>
-                        <button>Записаться на консультацию</button>
+                        <button onclick="openPopup()">Записаться на консультацию</button>
                     </li>
                 </ul>
             </nav>
@@ -62,7 +62,7 @@
     <div class="section_1">
         <div class="image_div">
             <div class="behind_image"></div>
-            <div class="image"></div>
+            <div class="image" style="background-image: url(static/images/me.jpg);"></div>
         </div>
         <div class="main_text_div">
             <div class="me">
@@ -78,7 +78,7 @@
             <p class="text">
                 Каждый из нас сталкивается с периодами неопределенности и стресса. Важно не только научиться преодолевать эти испытания, но и извлекать из них уроки. Я готова помочь вам не только справиться с кризисом, но и стать сильнее с каждым новым испытанием. 
             </p>
-            <button class="sign_up_button">Записаться на консультацию</button>
+            <button class="sign_up_button" onclick="openPopup()">Записаться на консультацию</button>
         </div>
     </div>
 
@@ -98,56 +98,56 @@
             </h3>
         </div>
         <div class="cards">
-            <div class="card">
-                <div class="image"></div>
+            <a class="card" href="pages/with_what.html#family">
+                <div class="image" style="background-image: url(static/images/family_problems.jpg);"></div>
                 <p class="description">Семейные трудности</p>
-            </div>
-            <div class="card">
-                <div class="image"></div>
+            </a>
+            <a class="card" href="pages/with_what.html#lovers">
+                <div class="image" style="background-image: url(static/images/lovers.jpg);"></div>
                 <p class="description">Сложности в отношениях</p>
-            </div>
-            <div class="card">
-                <div class="image"></div>
+            </a>
+            <a class="card" href="pages/with_what.html#self">
+                <div class="image" style="background-image: url(static/images/self_growth.jpg);"></div>
                 <p class="description">Личностное развитие и самооценка</p>
-            </div>
-            <div class="card">
-                <div class="image"></div>
+            </a>
+            <a class="card" href="pages/with_what.html#emotions">
+                <div class="image" style="background-image: url(static/images/emotions.jpg);"></div>
                 <p class="description">Эмоциональные проблемы</p>
-            </div>
+            </a>
         </div>
     </div>
 
     <div class="section_3">
         <h1 class="section_header">Преимущества для вас</h1>
         <div class="advantages">
-            <div class="advantage">
-                <div class="image"></div>
+            <a class="advantage" href="pages/how.html">
+                <div class="image"><i class='bx bx-timer'></i></div>
                 <div class="description">
                     <h3 class="name">Продолжительность консультации 50 мин</h3>
                     <p class="text"></p>
                 </div>
-            </div>
-            <div class="advantage">
-                <div class="image"></div>
+            </a>
+            <a class="advantage" href="pages/how.html">
+                <div class="image"><i class='bx bx-check-shield' ></i></div>
                 <div class="description">
                     <h3 class="name">100% конфиденциальность</h3>
                     <p class="text"></p>
                 </div>
-            </div>
-            <div class="advantage">
-                <div class="image"></div>
+            </a>
+            <a class="advantage" href="pages/how.html">
+                <div class="image"><i class='bx bx-time-five' ></i></div>
                 <div class="description">
                     <h3 class="name">Подбираем удобное для вас время приема</h3>
                     <p class="text"></p>
                 </div>
-            </div>
-            <div class="advantage">
-                <div class="image"></div>
+            </a>
+            <a class="advantage" href="pages/how.html">
+                <div class="image"><i class='bx bx-conversation'></i></div>
                 <div class="description">
                     <h3 class="name">Прием в Москве очно или онлайн по всему миру</h3>
                     <p class="text">(только на русском языке)</p>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 
@@ -163,7 +163,7 @@
                     <li>Намечаем примерный план работы</li>
                 </ul>
                 <div class="button_div">
-                    <button class="sign_up_button">Записаться</button>
+                    <button class="sign_up_button" onclick="openPopup()">Записаться</button>
                 </div>
             </div>
             <div class="card">
@@ -173,7 +173,7 @@
                     <li>При оплате каждой встречи отдельно</li>
                 </ul>
                 <div class="button_div">
-                    <button class="sign_up_button">Записаться</button>
+                    <button class="sign_up_button" onclick="openPopup()">Записаться</button>
                 </div>
             </div>
             <div class="card">
@@ -183,7 +183,7 @@
                     <li>При оплате 4 консультаций единовременно</li>
                 </ul>
                 <div class="button_div">
-                    <button class="sign_up_button">Записаться</button>
+                    <button class="sign_up_button" onclick="openPopup()">Записаться</button>
                 </div>
             </div>
         </div>
@@ -225,9 +225,8 @@
                   
                     <!-- Контейнер для фотографий -->
                     <div class="slider-container">
-                      <div class="slide active" style="background-color: red;"></div>
-                      <div class="slide" style="background-color: green;"></div>
-                      <div class="slide" style="background-color: blue;"></div>
+                      <div class="slide active" style="background-image: url(static/images/diplom1.jpg);"></div>
+                      <div class="slide active" style="background-image: url(static/images/diplom2.jpg);"></div>
                     </div>
                   
                     <!-- Стрелка "Вперёд" -->
@@ -255,14 +254,48 @@
         </div>
     </div>
 
+    <div class="sign_up">
+        <div class="info">
+            <h1>Запишитесь на консультацию или задайте вопрос</h1>
+            <div class="buttons">
+                <button><a href="https://wa.me/79055377637"><img class="whatsapp" src="../static/logos/whatsapp.svg" alt=""></a></button>
+                <button><a href="https://t.me/Vlasova_Boriskovskaya"><img class="tg" src="../static/logos/telegram.svg" alt=""></a></button>
+            </div>
+            <i class='bx bxs-phone navbar_icon' ></i><p class="phone"><a href="tel:+79055377637">+7 (905) 537 76 37</a></p>
+        </div>
+        <button class="sign_up_button" onclick="openPopup()">Записаться на консультацию</button>
+    </div>
+
     <footer>
         <p>ИП крутая психолог</p>
         <p>ОРГНИП ИНН</p>
         <div class="buttons">
-            <button><img class="whatsapp_footer" src="static/logos/whatsapp.svg" alt=""></button>
-            <button><img class="tg_footer" src="static/logos/telegram.svg" alt=""></button>
+            <button><a href="https://wa.me/79055377637"><img class="whatsapp_footer" src="static/logos/whatsapp.svg" alt=""></a></button>
+            <button><a href="https://t.me/Vlasova_Boriskovskaya"><img class="tg_footer" src="static/logos/telegram.svg" alt=""></a></button>
         </div>
     </footer>
+
+
+    <div class="popup">
+        <div class="popup_content">
+            <h1><p>ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</p><i class="bx bx-x" onclick="closePopup()"></i></h1>
+            <div class="buttons">
+                <div class="button">
+                    <p>Написать в Whatsapp</p>
+                    <a href="https://wa.me/79055377637"><button><img class="whatsapp_popup" src="static/logos/whatsapp.svg" alt=""></button></a>
+                </div>
+                <div class="button">
+                    <p>Написать в Telegram</p>
+                    <button><a href="https://t.me/Vlasova_Boriskovskaya"><img class="tg_popup" src="static/logos/telegram.svg" alt=""></a></button>
+                </div>
+                <div class="button">
+                    <p>Позвонить</p>
+                    <p class="phone"><i class='bx bxs-phone'></i><a href="tel:+79055377637">+7 (999) 999 99 99</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="scripts/index.js"></script>
 </body>
 </html>
