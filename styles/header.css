@@ -139,8 +139,9 @@ header .navbar{
 
 header .navbar h1{
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 500;
     font-family: 'GreatVibes';
+    margin: -15px;
 
     cursor: pointer;
 
@@ -325,7 +326,7 @@ header .icons i{
         z-index: 100;
     }
     .void{
-        height: 76px !important;
+        height: 64.4px !important;
     }
 }
 
@@ -579,4 +580,7 @@ footer p{
             padding: 0;
         }
     }
+    .void{
+        height: 46px !important;
+    }   
 }
