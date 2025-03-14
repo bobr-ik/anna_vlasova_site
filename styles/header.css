@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'GreatVibes';
+    src: url(../static/fonts/ofont.ru_1\ Shelley\ Volante.ttf);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -132,7 +138,10 @@ header .navbar{
 }
 
 header .navbar h1{
-    font-size: 1.2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'GreatVibes';
+
     cursor: pointer;
 
     a{
@@ -190,16 +199,18 @@ header .icons i{
     display: none;
 }
 
+.void{
+    height: 149.4px !important;
+}
+
 @media screen and (max-width: 1100px) {
-    .void{
-        height: 60.8px !important;
-    }
     .before_navbar{
         display: none !important;
     }
     header{
         display: flex;
         width: 100vw;
+        max-height: 76px;
     }
 
     .icons{
@@ -313,13 +324,14 @@ header .icons i{
         width: 100vw;
         z-index: 100;
     }
+    .void{
+        height: 76px !important;
+    }
 }
 
 
 
-.void{
-    height: 115.8px;
-}
+
 
 
 
@@ -541,6 +553,10 @@ footer p{
 @media screen and (max-width: 600px) {
     header .navbar{
         padding: 20px 20px;
+
+        h1{
+            font-size: 2rem !important;
+        }
     }
     
     .other_pages_name{
