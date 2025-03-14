@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Gilroy";
     font-size: 0.9rem;
+    user-select: none;
 }
 
 html{
@@ -147,6 +148,7 @@ header .navbar nav ul{
     margin: 0;
     padding: 0;
     display: flex;
+    cursor: pointer;
 }
 
 header .navbar nav ul li{

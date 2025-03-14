@@ -18,9 +18,9 @@
             <div class="others">
                 <ul>
                     <li><i class='bx bxs-briefcase-alt-2 navbar_icon'></i>Часы работы c 12:00 - 22:00</li>
-                    <li><i class='bx bxs-phone navbar_icon' ></i><a href="tel:+79055377637">+7 (905) 537-76-37</a></li>
-                    <li><a href="https://wa.me/79055377637"><img class="header_whatsapp" src="../static/logos/whatsapp.svg" alt=""></a></li>
-                    <li><a href="https://t.me/Vlasova_Boriskovskaya"><img class="header_tg" src="../static/logos/telegram.svg" alt=""></a></li>
+                    <li onclick="phone()"><i class='bx bxs-phone navbar_icon' ></i><a>+7 (905) 537-76-37</a></li>
+                    <li onclick="whatsapp()"><a><img class="header_whatsapp" src="../static/logos/whatsapp.svg" alt=""></a></li>
+                    <li onclick="telegram()"><a><img class="header_tg" src="../static/logos/telegram.svg" alt=""></a></li>
                 </ul>
                 <button onclick="openPopup()">Записаться на консультацию</button>
             </div>
@@ -36,12 +36,23 @@
             <h1><a href="../index.html">My Website</a></h1>
             <nav>
                 <ul>
-                    <li><a href="with_what.html">C ЧЕМ Я РАБОТАЮ</a></li>
-                    <li><a href="how.html">КАК Я РАБОТАЮ</a></li>
-                    <li><a href="price.html"><b>СТОИМОСТЬ</b></a></li>
-                    <li><a href="qualification.html">КВАЛИФИКАЦИЯ</a></li>
-                    <li><a href="contacts.html">КОНТАКТЫ</a></li>
-                    <li class="sign_up_dop"><button onclick="openPopup()">Записаться на консультацию</button></li>
+                    <li onclick="navbar_link('with_what.html')"><a>C ЧЕМ Я РАБОТАЮ</a></li>
+                    <li onclick="navbar_link('how.html')"><a>КАК Я РАБОТАЮ</a></li>
+                    <li onclick="navbar_link('price.html')"><a><b>СТОИМОСТЬ</b></a></li>
+                    <li onclick="navbar_link('qualification.html')"><a>КВАЛИФИКАЦИЯ</a></li>
+                    <li onclick="navbar_link('contacts.html')"><a>КОНТАКТЫ</a></li>
+                    <li class="sign_up_dop">
+                        <ul>
+                            <li class="dop_contacts"><i class='bx bxs-briefcase-alt-2 navbar_icon'></i>Часы работы c 12:00 - 22:00</li>
+                            <li class="dop_contacts">
+                                <u onclick="phone()"><i class='bx bxs-phone navbar_icon'></i><u>+7 (905) 537-76-37</u></u>
+                                <img onclick="whatsapp()" class="header_whatsapp" src="../static/logos/whatsapp.svg" alt="">
+                                <img onclick="telegram()" class="header_tg" src="../static/logos/telegram.svg" alt="">
+                            </li>
+
+                        </ul>
+                        <button onclick="openPopup()">Записаться на консультацию</button>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -131,10 +142,10 @@
         <div class="info">
             <h1>Запишитесь на консультацию или задайте вопрос</h1>
             <div class="buttons">
-                <button><a href="https://wa.me/79055377637"><img class="whatsapp" src="../static/logos/whatsapp.svg" alt=""></a></button>
-                <button><a href="https://t.me/Vlasova_Boriskovskaya"><img class="tg" src="../static/logos/telegram.svg" alt=""></a></button>
+                <button onclick="whatsapp()"><a><img class="whatsapp" src="../static/logos/whatsapp.svg" alt=""></a></button>
+                <button onclick="telegram()"><a><img class="tg" src="../static/logos/telegram.svg" alt=""></a></button>
             </div>
-            <i class='bx bxs-phone navbar_icon' ></i><a class="phone" href="tel:+79055377637">+7 (905) 537-76-37</a>
+            <i onclick="phone()" class='bx bxs-phone navbar_icon' ></i><a class="phone" onclick="phone()">+7 (905) 537-76-37</a>
         </div>
         <button class="sign_up_button" onclick="openPopup()">Записаться на консультацию</button>
     </div>
@@ -143,8 +154,8 @@
         <p>ИП крутая психолог</p>
         <p>ОРГНИП ИНН</p>
         <div class="buttons">
-            <button><a href="https://wa.me/79055377637"><img class="whatsapp_footer" src="../static/logos/whatsapp.svg" alt=""></a></button>
-            <button><img class="tg_footer" src="../static/logos/telegram.svg" alt=""></button>
+            <button onclick="whatsapp()"><a><img class="whatsapp_footer" src="../static/logos/whatsapp.svg" alt=""></a></button>
+            <button onclick="telegram()"><img class="tg_footer" src="../static/logos/telegram.svg" alt=""></button>
         </div>
     </footer>
 
@@ -152,17 +163,17 @@
         <div class="popup_content">
             <h1><p>ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</p><i class="bx bx-x" onclick="closePopup()"></i></h1>
             <div class="buttons">
-                <div class="button">
+                <div class="button" onclick="whatsapp()">
                     <p>Написать в Whatsapp</p>
-                    <button><a href="https://wa.me/79055377637"><img class="whatsapp_popup" src="../static/logos/whatsapp.svg" alt=""></a></button>
+                    <button><a><img class="whatsapp_popup" src="../static/logos/whatsapp.svg" alt=""></a></button>
                 </div>
-                <div class="button">
+                <div class="button" onclick="telegram()">
                     <p>Написать в Telegram</p>
-                    <button><a href="https://t.me/Vlasova_Boriskovskaya"><img class="tg_popup" src="../static/logos/telegram.svg" alt=""></a></button>
+                    <button><a><img class="tg_popup" src="../static/logos/telegram.svg" alt=""></a></button>
                 </div>
-                <div class="button">
+                <div class="button" onclick="phone()">
                     <p>Позвонить</p>
-                    <p class="phone"><i class='bx bxs-phone'></i><a href="tel:+79055377637">+7 (905) 537-76-37</a></p>
+                    <p class="phone"><i class='bx bxs-phone'></i><a>+7 (905) 537-76-37</a></p>
                 </div>
             </div>
         </div>
