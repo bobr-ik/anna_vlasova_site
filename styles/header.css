@@ -132,7 +132,11 @@ header .navbar{
 }
 
 header .navbar h1{
-    font-size: 1.2rem;
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'GreatVibes';
+    margin: -15px;
+
     cursor: pointer;
 
     a{
@@ -563,4 +567,7 @@ footer p{
             padding: 0;
         }
     }
+    .void{
+        height: 46px !important;
+    }   
 }
