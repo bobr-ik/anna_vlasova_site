@@ -145,10 +145,6 @@ header .navbar{
 }
 
 header .navbar h1{
-    font-size: 3rem;
-    font-weight: 500;
-    font-family: 'GreatVibes';
-    margin: -15px;
 
     cursor: pointer;
     font-size: 3rem;
