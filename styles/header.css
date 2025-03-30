@@ -146,8 +146,10 @@ header .navbar{
 }
 
 header .navbar h1{
-    font-size: 1.2rem;
-    cursor: pointer;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'GreatVibes';
+    margin: -15px;
 
     a{
         text-decoration: none;
@@ -204,6 +206,9 @@ header .icons i{
     display: none;
 }
 
+.void{
+    height: 115.8px;
+}
 @media screen and (max-width: 1100px) {
     .before_navbar{
         display: none !important;
