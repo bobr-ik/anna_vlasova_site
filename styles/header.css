@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'GreatVibes';
+    src: url(../static/fonts/ofont.ru_1\ Shelley\ Volante.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -146,6 +151,10 @@ header .navbar h1{
     margin: -15px;
 
     cursor: pointer;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'GreatVibes';
+    margin: -15px;
 
     a{
         text-decoration: none;
@@ -203,9 +212,8 @@ header .icons i{
 }
 
 .void{
-    height: 119.4px !important;
+    height: 115.8px;
 }
-
 @media screen and (max-width: 1100px) {
     .void{
         height: 60.8px !important;
