@@ -693,7 +693,7 @@ button:active {
     .section_4 .cards .card {
         width: auto;
         margin: 0;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
 
 
         .name {
@@ -1073,6 +1073,7 @@ button:active {
 
     .section_4 .cards .card {
         width: 300px !important;
+        gap: 0;
     }
 
 
