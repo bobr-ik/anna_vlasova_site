@@ -5,6 +5,7 @@
     font-family: "Gilroy";
     font-size: 0.9rem;
     user-select: none;
+    font-weight: 600;
 }
 
 html{
@@ -17,6 +18,7 @@ html{
     --light: #efe6de;
     --dark: #5b95a8;
     --bobr: #bb9a89;
+    --lil_dark_bobr: #ae846f;
     --light_blue: #bbcfd8;
     --dark_bobr: #ac7f62;
     --blue: #73afc3;
@@ -42,7 +44,7 @@ header .before_navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--dark);
+    background-color: var(--bobr);
     padding: 0px 180px;
     min-height: 55px;
 
@@ -81,7 +83,7 @@ header .before_navbar .others ul li{
     cursor: pointer;
     color: #fff;
     font-size: 0.9rem;
-    font-weight: 400;
+    font-weight: 600;
     max-height: 100px;
 }
 
@@ -98,13 +100,19 @@ header .before_navbar .others button{
     align-self: stretch;
     justify-self: flex-end;
     padding: 10px 20px;
-    background-color: var(--blue);
+    background-color: var(--lil_dark_bobr);
     border: none;
     cursor: pointer;
     margin: 0 15px;
     color: #fff;
     font-size: 0.9rem;
-    font-weight: 700;
+    font-weight: 900;
+
+    @media (hover) {
+        &:hover{
+            background-color: var(--dark_bobr) !important;
+        }
+    }
 }
 
 .before_navbar p i{
@@ -124,7 +132,7 @@ header .navbar{
     width: 100%;
     padding: 20px;
     background-color: var(--light);
-    color: var(--dark);
+    color: var(--bobr);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -133,7 +141,7 @@ header .navbar{
 
 header .navbar h1{
     font-size: 3rem;
-    font-weight: 500;
+    font-weight: 700;
     font-family: 'GreatVibes';
     margin: -15px;
 
@@ -162,17 +170,17 @@ header .navbar nav ul li{
 header .navbar nav ul li a{
     text-decoration: none;
     font-size: 0.9rem;
-    font-weight: 400;
-    color: var(--dark);
+    font-weight: 600;
+    color: var(--lil_dark_bobr);
 }
 
 header .navbar nav ul li a.active{
-    color: var(--blue);
+    color: var(--dark_bobr);
 }
 
 @media (hover){
     header .navbar nav ul li a:hover{
-        color: var(--blue);
+        color: var(--dark_bobr);
     }
 }
 
@@ -182,16 +190,20 @@ header .navbar nav ul li a.active{
 
 .icons {
     font-size: 8rem;
-    color: var(--dark);
+    color: var(--dark_bobr);
     cursor: pointer;
     display: none;
 }
 header .icons i{
     font-size: 1.8rem;
-    color: var(--dark);
+    color: var(--dark_bobr);
 }
 .sign_up_dop{
     display: none;
+}
+
+.void{
+    height: 119.4px !important;
 }
 
 @media screen and (max-width: 1100px) {
@@ -285,7 +297,7 @@ header .icons i{
             background-color: var(--blue);
             color: #fff;
             border-radius: calc(0.6rem + 20px);
-            font-weight: 700;
+            font-weight: 800;
             font-size: 1.1rem;
         }
 
@@ -338,11 +350,10 @@ header .icons i{
     background-image: url(../static/images/background_for_other_pages.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     color: #fff;
     padding: 40px;
     text-align: left;
-    filter: brightness(1.5);
     display: flex;
     align-items: center;
     position: relative;
@@ -351,7 +362,7 @@ header .icons i{
         filter: none;
         font-size: 2rem;
         padding-left: 10vw;
-        font-weight: 400;
+        font-weight: 600;
         color: var(--black_bold);
     }
     h2{
@@ -360,14 +371,14 @@ header .icons i{
         filter: none;
         font-size: 1.2rem;
         padding-left: 10vw;
-        font-weight: 400;
+        font-weight: 600;
         color: var(--black);
         position: absolute;
         right: calc(40px + 10vw);
         a{
             color: var(--black_bold);
             text-decoration: none;
-            font-weight: 400;
+            font-weight: 600;
             font-size: 1.2rem;
 
             @media (hover) {
@@ -490,7 +501,7 @@ footer p{
         p{
             font-size: 1.2rem;
             text-align: center;
-            font-weight: 500;
+            font-weight: 700;
             color: var(--black)
         }
 
@@ -537,6 +548,18 @@ footer p{
                 }
             }
         }
+    }
+}
+
+
+@media screen and (max-width: 1300px) {
+    header .before_navbar{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    header .navbar{
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 

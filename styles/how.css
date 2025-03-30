@@ -59,7 +59,8 @@ html{
         color: var(--black);
         line-height: 100%;
         position: relative;
-        padding: 0 0 30px 20px;
+        padding: 0 0 20px 20px;
+        font-weight: 500;
         &::before {
             content: "•"; /* Кастомный маркер (точка) */
             color: var(--bobr); /* Цвет маркера */
