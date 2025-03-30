@@ -51,6 +51,5 @@ function phone() {
 }
 
 function navbar_link(page) {
-  document.getElementById('check').checked = false;
-  window.location.href = page;
+    window.location.href = page;
 }
