@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/with_what.css">
 </head>
+
 <body>
     <header>
         <div class="before_navbar">
@@ -17,9 +19,11 @@
             <div class="others">
                 <ul>
                     <li><i class='bx bxs-briefcase-alt-2 navbar_icon'></i>Часы работы c 12:00 - 22:00</li>
-                    <li onclick="phone()"><i class='bx bxs-phone navbar_icon' ></i><a>+7 (905) 537-76-37</a></li>
-                    <li onclick="whatsapp()"><a><img class="header_whatsapp" src="../static/logos/whatsapp.svg" alt=""></a></li>
-                    <li onclick="telegram()"><a><img class="header_tg" src="../static/logos/telegram.svg" alt=""></a></li>
+                    <li onclick="phone()"><i class='bx bxs-phone navbar_icon'></i><a>+7 (905) 537-76-37</a></li>
+                    <li onclick="whatsapp()"><a><img class="header_whatsapp" src="../static/logos/whatsapp.svg"
+                                alt=""></a></li>
+                    <li onclick="telegram()"><a><img class="header_tg" src="../static/logos/telegram.svg" alt=""></a>
+                    </li>
                 </ul>
                 <button onclick="openPopup()">Записаться на консультацию</button>
             </div>
@@ -42,10 +46,13 @@
                     <li onclick="navbar_link('contacts.html')"><a>КОНТАКТЫ</a></li>
                     <li class="sign_up_dop">
                         <ul>
-                            <li class="dop_contacts"><i class='bx bxs-briefcase-alt-2 navbar_icon'></i>Часы работы c 12:00 - 22:00</li>
+                            <li class="dop_contacts"><i class='bx bxs-briefcase-alt-2 navbar_icon'></i>Часы работы c
+                                12:00 - 22:00</li>
                             <li class="dop_contacts">
-                                <u onclick="phone()"><i class='bx bxs-phone navbar_icon'></i><u>+7 (905) 537-76-37</u></u>
-                                <img onclick="whatsapp()" class="header_whatsapp" src="../static/logos/whatsapp.svg" alt="">
+                                <u onclick="phone()"><i class='bx bxs-phone navbar_icon'></i><u>+7 (905)
+                                        537-76-37</u></u>
+                                <img onclick="whatsapp()" class="header_whatsapp" src="../static/logos/whatsapp.svg"
+                                    alt="">
                                 <img onclick="telegram()" class="header_tg" src="../static/logos/telegram.svg" alt="">
                             </li>
 
@@ -62,7 +69,7 @@
         <h1>C чем я работаю</h1>
         <h2><a href="../index.html">Главная</a> / C чем я работаю</h2>
     </div>
-    
+
     <main>
         <div class="cases">
             <div class="case" id="family">
@@ -118,7 +125,7 @@
                     <h1 class="name">Эмоциональные проблемы</h1>
                     <ul class="description">
                         <li>апатия, депрессия</li>
-                        <li>страхи, тревоги, панические атаки</li> 
+                        <li>страхи, тревоги, панические атаки</li>
                     </ul>
                 </div>
             </div>
@@ -127,27 +134,34 @@
             <div class="info">
                 <h1>Запишитесь на консультацию или задайте вопрос</h1>
                 <div class="buttons">
-                    <button onclick="whatsapp()"><a><img class="whatsapp" src="../static/logos/whatsapp.svg" alt=""></a></button>
-                    <button onclick="telegram()"><a><img class="tg" src="../static/logos/telegram.svg" alt=""></a></button>
+                    <button onclick="whatsapp()"><a><img class="whatsapp" src="../static/logos/whatsapp.svg"
+                                alt=""></a></button>
+                    <button onclick="telegram()"><a><img class="tg" src="../static/logos/telegram.svg"
+                                alt=""></a></button>
                 </div>
-                <i onclick="phone()" class='bx bxs-phone navbar_icon'></i><p onclick="phone()" class="phone">+7 (905) 537-76-37</p>
+                <i onclick="phone()" class='bx bxs-phone navbar_icon'></i>
+                <p onclick="phone()" class="phone">+7 (905) 537-76-37</p>
             </div>
             <button class="sign_up_button" onclick="openPopup()">Записаться на консультацию</button>
         </div>
     </main>
-    
+
 
     <footer>
         <p>ИП крутая психолог</p>
         <p>ОРГНИП ИНН</p>
         <div class="buttons">
-            <button onclick="whatsapp()"><a><img class="whatsapp_footer" src="../static/logos/whatsapp.svg" alt=""></a></button>
-            <button onclick="telegram()"><a><img class="tg_footer" src="../static/logos/telegram.svg" alt=""></a></button>
+            <button onclick="whatsapp()"><a><img class="whatsapp_footer" src="../static/logos/whatsapp.svg"
+                        alt=""></a></button>
+            <button onclick="telegram()"><a><img class="tg_footer" src="../static/logos/telegram.svg"
+                        alt=""></a></button>
         </div>
     </footer>
     <div class="popup">
         <div class="popup_content">
-            <h1><p>ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</p><i class="bx bx-x" onclick="closePopup()"></i></h1>
+            <h1>
+                <p>ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</p><i class="bx bx-x" onclick="closePopup()"></i>
+            </h1>
             <div class="buttons">
                 <div class="button" onclick="whatsapp()">
                     <p>Написать в Whatsapp</p>
@@ -167,4 +181,5 @@
 
     <script src="../scripts/index.js"></script>
 </body>
+
 </html>
