@@ -363,6 +363,10 @@ header .icons i {
         width: 100vw;
         z-index: 100;
     }
+
+    .void{
+        height: 64.4px !important;
+    }   
 }
 
 
@@ -612,6 +616,15 @@ footer p {
 @media screen and (max-width: 600px) {
     header .navbar {
         padding: 20px 20px;
+    }
+
+    header .navbar h1 {
+        text-align: center;
+        font-size: 2.2rem !important;
+    }
+
+    .void{
+        height: 50px !important;
     }
 
     .other_pages_name {
