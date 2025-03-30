@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'RobotoFlex';
     src: url('../static/fonts/RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf');
@@ -13,7 +12,7 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-html{
+html {
     scrollbar-width: none;
 }
 
@@ -22,48 +21,48 @@ html{
 
 /* SECTION 1 */
 
-.section_1{
+.section_1 {
     display: flex;
     padding: 50px 200px;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: var(--bg);
 }
 
 /* SECTION 1 text  */
-.section_1 .main_text_div{
+.section_1 .main_text_div {
     width: 60%;
     /* height: 400px; */
-    background-color: #fff;
+    background-color: var(--bg);
     margin-right: 10%;
-    
+
 }
 
-.section_1 .main_text_div .main{
+.section_1 .main_text_div .main {
     position: relative;
 }
 
-.section_1 .main_text_div h1{
+.section_1 .main_text_div h1 {
     font-size: 2.3rem;
     font-weight: 500;
     color: var(--dark);
 }
 
-.section_1 .main_text_div h2{
+.section_1 .main_text_div h2 {
     font-size: 1.8rem;
     font-weight: normal;
     margin-bottom: 20px;
     color: var(--dark);
 }
 
-.section_1 .main_text_div p{
+.section_1 .main_text_div p {
     font-size: 1.2rem;
     color: var(--black);
     margin-bottom: 14px;
     line-height: 150%;
     padding-right: 10%;
 
-    b{
+    b {
         font-weight: 500;
         color: var(--black_bold);
         font-size: 1.2rem;
@@ -73,7 +72,7 @@ html{
 
 
 
-.sign_up_button{
+.sign_up_button {
     margin-top: 20px;
     padding: 15px 40px;
     background-color: var(--blue);
@@ -87,10 +86,10 @@ html{
 
 /* SECTION 1 image */
 
-.section_1 .image_div{
+.section_1 .image_div {
     width: 50%;
     align-self: stretch;
-    background-color: #fff;
+    background-color: var(--bg);
     margin-right: 60px;
     display: flex;
     justify-content: flex-end;
@@ -98,7 +97,7 @@ html{
     position: relative;
 }
 
-.section_1 .image_div .behind_image{
+.section_1 .image_div .behind_image {
     width: 90%;
     height: 100%;
     background-color: var(--light_blue);
@@ -108,7 +107,7 @@ html{
     top: -20px;
 }
 
-.section_1 .image_div .image{
+.section_1 .image_div .image {
     width: 90%;
     height: 100%;
     background-color: var(--bobr);
@@ -122,25 +121,26 @@ html{
 
 /* SECTION 2  */
 
-.section_2{
+.section_2 {
     display: flex;
     padding: 50px 100px;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
+    background-color: var(--bg);
 }
 
 /* SECTION 2 description */
-.section_2 .description{
+.section_2 .description {
     padding: 0 15%;
     text-align: center;
-    *{
+
+    * {
         text-align: center;
         margin-bottom: 20px;
     }
 }
 
-.section_2 .description h2{
+.section_2 .description h2 {
     font-size: 0.9rem;
     color: var(--black);
     font-weight: 400;
@@ -148,7 +148,7 @@ html{
     letter-spacing: 2px;
     padding: 0 20px;
 
-    &::after{
+    &::after {
         content: '';
         display: block;
         width: 50px;
@@ -160,7 +160,7 @@ html{
 
 }
 
-.section_2 .description h3{
+.section_2 .description h3 {
     font-size: 1rem;
     color: var(--black);
     font-family: 'Gilroy';
@@ -171,7 +171,7 @@ html{
 
 /* SECTION 2 cards */
 
-.section_2 .cards{
+.section_2 .cards {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -179,10 +179,10 @@ html{
     margin-bottom: 0px;
 }
 
-.section_2 .cards .card{
+.section_2 .cards .card {
     width: 15vw;
     max-height: 400px;
-    background-color: #fff;
+    background-color: var(--bg);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -190,7 +190,7 @@ html{
     text-decoration: none;
 }
 
-.section_2 .cards .card .image{
+.section_2 .cards .card .image {
     width: 15vw;
     height: 15vw;
     background-color: var(--bobr);
@@ -200,7 +200,7 @@ html{
     background-repeat: no-repeat;
 }
 
-.section_2 .cards .card .description{
+.section_2 .cards .card .description {
     font-size: 1.4rem;
     color: var(--black);
     margin-top: 40px;
@@ -210,13 +210,14 @@ html{
 
 /* SECTION 3 */
 
-.section_header{
+.section_header {
     font-size: 2.6rem;
     color: var(--black_bold);
     margin-bottom: 60px;
     text-align: center;
     font-weight: 400;
-    &::after{
+
+    &::after {
         content: '';
         display: block;
         width: 50px;
@@ -227,22 +228,22 @@ html{
     }
 }
 
-.section_3{
+.section_3 {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px 200px;
-    background-color: #fff;
+    background-color: var(--bg);
 }
 
-.section_3 .advantages{
+.section_3 .advantages {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
 }
 
-.section_3 .advantages .advantage{
+.section_3 .advantages .advantage {
     display: flex;
     align-items: flex-start;
     margin-bottom: 50px;
@@ -251,7 +252,7 @@ html{
     text-decoration: none;
 }
 
-.section_3 .advantages .advantage .image{
+.section_3 .advantages .advantage .image {
     width: 100px;
     height: 100px;
     background-color: var(--light);
@@ -260,13 +261,13 @@ html{
     justify-content: center;
     align-items: center;
 
-    i{
+    i {
         color: var(--dark);
         font-size: 4rem;
     }
 }
 
-.section_3 .advantages .advantage .description{
+.section_3 .advantages .advantage .description {
     width: calc(45vw - 400px);
     margin-left: 20px;
     display: flex;
@@ -275,7 +276,7 @@ html{
     align-self: stretch;
 }
 
-.section_3 .advantages .advantage .description .name{
+.section_3 .advantages .advantage .description .name {
     font-size: 1.5rem;
     font-weight: 300;
     color: var(--black);
@@ -283,7 +284,7 @@ html{
     display: inline-block;
 }
 
-.section_3 .advantages .advantage .description .text{
+.section_3 .advantages .advantage .description .text {
     font-size: 1.2rem;
     color: var(--black);
     font-family: 'Gilroy';
@@ -292,22 +293,22 @@ html{
 
 /* SECTION 4 */
 
-.section_4{
+.section_4 {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px 200px;
-    background-color: #fff;
+    background-color: var(--bg);
 }
 
-.section_4 .cards{
+.section_4 .cards {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     width: 100%;
 }
 
-.section_4 .cards .card{
+.section_4 .cards .card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -320,7 +321,7 @@ html{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.section_4 .cards .card .name{
+.section_4 .cards .card .name {
     font-size: 1.4rem;
     color: var(--black);
     margin-top: 40px;
@@ -331,7 +332,7 @@ html{
     width: calc((100vw - 400px) * 0.21);
 }
 
-.section_4 .cards .card .price{
+.section_4 .cards .card .price {
     font-size: 2.5rem;
     font-weight: 500;
     color: var(--black_bold);
@@ -339,27 +340,27 @@ html{
     text-align: center;
     margin-top: calc(1.2rem + 100px);
 
-    &::after{
+    &::after {
         content: ' руб';
         font-size: 1rem;
     }
 }
 
-.section_4 .cards .card .description{
+.section_4 .cards .card .description {
     color: var(--black);
     font-family: 'Gilroy';
     text-align: center;
     margin: 5px;
 }
 
-.section_4 .cards .card .description li{
+.section_4 .cards .card .description li {
     margin-bottom: 10px;
     text-align: left;
     font-size: 0.95rem;
     font-weight: 400;
 }
 
-.section_4 .cards .card .button_div{
+.section_4 .cards .card .button_div {
     align-self: stretch;
     height: 100%;
     display: flex;
@@ -369,15 +370,15 @@ html{
 
 /* SECTION 5 */
 
-.section_5{
+.section_5 {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px 200px;
-    background-color: #fff;
+    background-color: var(--bg);
 }
 
-.section_5 .main_div{
+.section_5 .main_div {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -385,7 +386,7 @@ html{
     margin-bottom: 50px;
 }
 
-.section_5 .main_div ul{
+.section_5 .main_div ul {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -395,7 +396,7 @@ html{
 
 }
 
-.section_5 .main_div ul li{
+.section_5 .main_div ul li {
     flex-direction: column;
     align-items: center;
     cursor: pointer;
@@ -403,11 +404,15 @@ html{
     color: var(--black);
     font-size: 1.1rem;
     position: relative;
-    padding-left: 30px; 
+    padding-left: 30px;
+
     &::before {
-        content: "•"; /* Кастомный маркер (точка) */
-        color: var(--bobr); /* Цвет маркера */
-        font-size: 4rem; /* Размер маркера */
+        content: "•";
+        /* Кастомный маркер (точка) */
+        color: var(--bobr);
+        /* Цвет маркера */
+        font-size: 4rem;
+        /* Размер маркера */
         position: absolute;
         left: 0;
         top: 0;
@@ -415,7 +420,7 @@ html{
     }
 }
 
-.section_5 .main_div .diploms{
+.section_5 .main_div .diploms {
     margin-left: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -425,15 +430,15 @@ html{
     background-color: none;
 }
 
-.section_6{
+.section_6 {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px 200px;
-    background-color: #fff;
+    background-color: var(--bg);
 }
 
-.section_6 .experience{
+.section_6 .experience {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -442,20 +447,20 @@ html{
     align-items: center;
 }
 
-.section_6 .experience .case{
+.section_6 .experience .case {
     width: 30%;
     max-width: 300px;
 }
 
-.section_6 .experience .case .emphasis{
+.section_6 .experience .case .emphasis {
     font-size: 3.2rem;
     color: var(--dark);
     font-weight: 500;
     text-align: center;
-    
+
 }
 
-.section_6 .experience .case .description{
+.section_6 .experience .case .description {
     font-size: 1.2rem;
     color: var(--black);
     font-family: 'Gilroy';
@@ -464,7 +469,8 @@ html{
 
 .slider {
     position: relative;
-    max-width: 600px; /* Максимальная ширина слайдера */
+    max-width: 600px;
+    /* Максимальная ширина слайдера */
     margin: 0 auto;
     overflow: hidden;
     height: 100%;
@@ -480,8 +486,10 @@ html{
 
 .slide {
     height: 100%;
-    min-width: 100%; /* Каждая фотография занимает всю ширину контейнера */
-    display: none; /* Скрываем все фотографии по умолчанию */
+    min-width: 100%;
+    /* Каждая фотография занимает всю ширину контейнера */
+    display: none;
+    /* Скрываем все фотографии по умолчанию */
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -489,7 +497,8 @@ html{
 }
 
 .slide.active {
-    display: block; /* Показываем активную фотографию */
+    display: block;
+    /* Показываем активную фотографию */
 }
 
 .slider-arrow {
@@ -516,7 +525,7 @@ html{
 
 /* FOOTER */
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -524,14 +533,14 @@ footer{
     background-color: var(--dark);
 }
 
-footer .buttons{
+footer .buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 10px;
 }
 
-footer .buttons button{
+footer .buttons button {
     background-color: var(--blue);
     border: none;
     cursor: pointer;
@@ -541,26 +550,28 @@ footer .buttons button{
     height: 60px;
 }
 
-.whatsapp_footer{
+.whatsapp_footer {
     height: 50%;
     transform: translate(3%, 3%);
 }
-.tg_footer{
+
+.tg_footer {
     height: 42%;
     transform: translate(-9%, 4%);
 }
 
-footer p{
+footer p {
     color: #fff;
     font-size: 1.2rem;
     text-align: center;
 }
 
-button:active{
+button:active {
     background-color: var(--blue_hover) !important;
 }
+
 @media (hover) {
-    button:hover{
+    button:hover {
         background-color: var(--blue_hover) !important;
     }
 }
@@ -572,37 +583,38 @@ button:active{
         padding: 50px 50px;
     }
 
-    .section_1 .main_text_div{
+    .section_1 .main_text_div {
         margin-right: 0 !important;
     }
 
-    .section_2 .description{
+    .section_2 .description {
         padding: 0 50px;
     }
 
-    .section_3 .advantages .advantage .description{
+    .section_3 .advantages .advantage .description {
         width: calc(100% - 120px);
     }
 
-    .section_4 .cards .card{
+    .section_4 .cards .card {
         width: 35%;
 
-        .name{
+        .name {
             font-size: 1.3rem !important;
         }
-        .price{
+
+        .price {
             font-size: 2.2rem !important;
         }
     }
 
-    .section_5{
+    .section_5 {
         padding: 50px 50px;
     }
 
-    .section_6 .experience .case .emphasis{
+    .section_6 .experience .case .emphasis {
         font-size: 2.5rem;
     }
-    
+
 }
 
 @media screen and (max-width: 800px) {
@@ -611,8 +623,8 @@ button:active{
         padding: 50px 20px;
     }
 
-    .section_1 .image_div{
-        width: calc(100% - 40px);                      
+    .section_1 .image_div {
+        width: calc(100% - 40px);
         margin: 40px 0;
         margin-top: 0;
         height: 80vh;
@@ -620,142 +632,146 @@ button:active{
         transform: translateX(8vw);
     }
 
-    .section_1 .main_text_div{
+    .section_1 .main_text_div {
         margin: 0;
         text-align: center;
         position: relative;
-        .me{
+
+        .me {
             position: absolute !important;
             top: -20vh;
             left: 10vw;
             height: 400px;
             text-align: left;
-            *{
+
+            * {
                 color: #fff
             }
         }
-        .text{
+
+        .text {
             margin: 10px 0;
             padding: 0;
             text-align: left;
         }
-        
+
     }
 
-    .section_2{
+    .section_2 {
         padding: 50px;
 
-        .cards .card .description{
+        .cards .card .description {
             padding: 0 20px;
             font-size: 1.2rem;
         }
     }
 
-    .section_3{
+    .section_3 {
         padding: 50px;
 
-        .advantages{
+        .advantages {
             justify-content: center;
         }
 
-        .advantages .advantage{
+        .advantages .advantage {
             min-width: 300px;
         }
 
-        .advantages .advantage .description .name{
+        .advantages .advantage .description .name {
             font-size: 1.2rem;
         }
 
-        .advantages .advantage .description .text{
+        .advantages .advantage .description .text {
             font-size: 1rem;
         }
     }
 
-    .section_4 .cards{
+    .section_4 .cards {
         flex-direction: column;
     }
 
-    .section_4 .cards .card{
+    .section_4 .cards .card {
         width: auto;
         margin: 0;
         margin-bottom: 40px;
-        
 
-        .name{
+
+        .name {
             width: 40vw;
         }
     }
 
-    .section_5 .main_div{
+    .section_5 .main_div {
         padding: 50px 20px;
         flex-direction: column;
 
-        ul{
+        ul {
             margin: 0;
             padding: 0;
             width: 80vw
         }
-        .diploms{
+
+        .diploms {
             height: 80vh;
             width: auto;
         }
     }
 
-    .section_6{
+    .section_6 {
         padding: 50px 20px;
     }
 
-    .section_6 .experience{
+    .section_6 .experience {
         flex-direction: column;
 
-        .case{
+        .case {
             margin: 0;
             margin-bottom: 40px;
             width: auto;
             text-align: center;
 
-            .emphasis{
+            .emphasis {
                 font-size: 2.5rem;
                 width: auto
             }
         }
     }
 
-    
+
 }
 
-@media  screen and (max-width: 600px) {
-    .section_1{
+@media screen and (max-width: 600px) {
+    .section_1 {
         padding: 50px 10px;
-        
-        .image_div{
+
+        .image_div {
             margin: 10px;
             width: calc(90% - 20px);
         }
 
-        .main_text_div{
-            .name{
+        .main_text_div {
+            .name {
                 font-size: 1.6rem;
             }
         }
     }
 
-    .section_2 .description{
+    .section_2 .description {
         padding: 0;
     }
 
-    .section_2 .cards{
+    .section_2 .cards {
         flex-direction: column;
 
-        .card{
+        .card {
             width: auto;
 
-            .image{
+            .image {
                 width: 50vw;
                 height: 50vw;
             }
 
-            .description{
+            .description {
                 max-width: 70%;
                 margin: 10px 0;
                 margin-bottom: 30px;
@@ -763,125 +779,130 @@ button:active{
         }
     }
 
-    .section_4{
+    .section_4 {
         padding: 50px 10px;
 
-        .cards{
+        .cards {
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
 
-        .cards .card{
+        .cards .card {
             width: auto;
             max-width: 50vw;
         }
     }
 
-    .section_5{
+    .section_5 {
         padding: 50px 10px;
 
-        .main_div .diploms{
+        .main_div .diploms {
             margin: 0;
         }
     }
 }
 
 @media screen and (max-width: 400px) {
-    .section_1{
+    .section_1 {
         padding: 15px 5px;
     }
-    .section_1 .main_text_div .me{
+
+    .section_1 .main_text_div .me {
         position: absolute !important;
         top: -10vh;
         left: 10vw;
         height: 400px;
         text-align: left;
-        *{
+
+        * {
             color: #fff
         }
     }
 
-    .section_1 .image_div{
+    .section_1 .image_div {
         height: auto;
         margin: 0;
         width: calc(90vw - 20px);
 
-        .behind_image{
+        .behind_image {
             transform: translate(10vw, 5vw);
         }
-        *{
+
+        * {
             height: 50vh !important;
             width: calc(90vw - 20px) !important;
             transform: translateX(-5vw);
         }
     }
 
-    .section_1 .main_text_div{
+    .section_1 .main_text_div {
         width: auto;
         padding: 0 10px;
-        .text{
+
+        .text {
             padding: 0 10px;
             font-size: 0.8rem;
         }
-    }   
+    }
 
-    .section_header{
+    .section_header {
         padding: 0;
         font-size: 1.8rem;
         margin-bottom: 10px;
     }
 
-    .section_2{
+    .section_2 {
         padding: 15px 5px;
     }
 
-    .section_2 .description *{
+    .section_2 .description * {
         font-size: 0.8rem !important;
         margin-bottom: 5px;
     }
 
-    .section_3{
+    .section_3 {
         padding: 15px 5px;
     }
 
-    .section_3 .advantages{
+    .section_3 .advantages {
         width: auto;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    .section_3 .advantages .advantage{
+    .section_3 .advantages .advantage {
         flex-direction: column;
         align-items: center;
         min-width: 150px;
 
-        .description{
+        .description {
             width: auto;
             text-align: center;
             margin: 0;
 
-            .name{
+            .name {
                 padding-top: 2vw;
                 font-size: 1rem;
             }
         }
     }
 
-    .section_4 .cards .card{
+    .section_4 .cards .card {
         width: fit-content;
         width: 70vw;
-        .name{
+
+        .name {
             width: 50vw;
         }
     }
 
-    .section_5 .main_div .diploms{
+    .section_5 .main_div .diploms {
         height: 50vh !important;
     }
 }
 
-.sign_up .sign_up_button{
+.sign_up .sign_up_button {
     margin-top: 20px;
     padding: 20px 50px;
     background-color: var(--dark);
@@ -898,26 +919,27 @@ button:active{
 
 }
 
-.sign_up{
+.sign_up {
     padding: 2vw 10vw 5vw 10vw;
     background-color: var(--blue);
     color: #fff;
     position: relative;
 
-    .info{
+    .info {
 
-        h1{
+        h1 {
             font-size: 3rem;
             font-weight: 400;
             margin-bottom: 20px;
             max-width: 60%;
         }
 
-        i{
+        i {
             font-size: 2rem;
             margin: 20px 5px 20px 0;
         }
-        .phone{
+
+        .phone {
             display: inline-block !important;
             font-size: 1.8rem;
             font-weight: 500;
@@ -928,34 +950,34 @@ button:active{
             align-items: center;
             width: auto;
 
-            a{
+            a {
                 color: #fff;
                 text-decoration: none;
                 font-size: inherit;
 
                 @media (hover) {
-                    &:hover{
+                    &:hover {
                         color: var(--dark);
                     }
-                    
+
                 }
             }
 
-            &:active{
+            &:active {
                 color: var(--dark);
             }
 
             @media (hover) {
-                &:hover{
+                &:hover {
                     color: var(--dark);
                 }
-                
+
             }
 
 
         }
 
-        button{
+        button {
             height: 10vh;
             background-color: var(--dark);
             border: none;
@@ -966,11 +988,12 @@ button:active{
             height: 60px;
         }
 
-        .whatsapp{
+        .whatsapp {
             height: 50%;
             transform: translate(3%, 3%);
         }
-        .tg{
+
+        .tg {
             height: 42%;
             transform: translate(-9%, 4%);
         }
@@ -978,11 +1001,12 @@ button:active{
 
 }
 
-button:active{
+button:active {
     background-color: var(--blue_hover) !important;
 }
+
 @media (hover) {
-    button:hover{
+    button:hover {
         background-color: var(--blue_hover) !important;
     }
 }
@@ -990,12 +1014,12 @@ button:active{
 
 @media screen and (max-width: 1100px) {
 
-    .sign_up{
+    .sign_up {
         max-height: none !important;
         height: auto !important;
     }
 
-    .section_4 .cards{
+    .section_4 .cards {
         width: auto !important;
         display: flex;
         flex-wrap: wrap;
@@ -1003,44 +1027,51 @@ button:active{
         gap: 30px;
     }
 
-    .section_4 .cards .card{
+    .section_4 .cards .card {
         width: 300px !important;
 
-        .name{
+        .name {
             width: 200px !important;
         }
     }
-    .section_6{
+
+    .section_6 {
         padding: 50px 50px;
     }
 }
 
 @media screen and (max-width: 600px) {
 
-    .sign_up{
+    .sign_up {
         padding: 5vw;
         text-align: center;
-        h1{
+
+        h1 {
             font-size: 1.7rem !important;
             max-width: 90vw !important;
             text-align: center;
         }
-        .buttons{
+
+        .buttons {
             text-align: center;
         }
-        .info{
+
+        .info {
             text-align: center;
         }
-        p{
+
+        p {
             font-size: 1.5rem !important;
         }
-        .sign_up_button{
+
+        .sign_up_button {
             position: static;
             transform: none;
         }
 
     }
-    .section_4 .cards .card{
+
+    .section_4 .cards .card {
         width: 300px !important;
     }
 
@@ -1048,14 +1079,15 @@ button:active{
 }
 
 @media screen and (max-width: 350px) {
-    .sign_up h1{
-        font-size: 1.2rem !important;
-    }
-    .sign_up .info .phone{
+    .sign_up h1 {
         font-size: 1.2rem !important;
     }
 
-    .section_4 .cards .card{
+    .sign_up .info .phone {
+        font-size: 1.2rem !important;
+    }
+
+    .section_4 .cards .card {
         width: 90vw !important;
         min-width: 200px;
     }

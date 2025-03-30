@@ -12,23 +12,6 @@ html{
 }
 
 
-:root{
-    --light: #efe6de;
-    --dark: #5b95a8;
-    --bobr: #bb9a89;
-    --light_blue: #bbcfd8;
-    --dark_bobr: #ac7f62;
-    --blue: #73afc3;
-    --blue_hover: #47a1be;
-    --black: rgb(90, 90, 90);
-    --black_bold: rgb(49, 49, 49);
-    --cream: #fff8f3;
-}
-
-
-
-
-
 
 .sign_up .sign_up_button{
     margin-top: 20px;
