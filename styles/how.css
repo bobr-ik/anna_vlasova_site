@@ -185,7 +185,7 @@ button:active {
     }
 
     .section_1 {
-        flex-direction: column;
+        /* flex-direction: column; */
         padding: 20px;
 
         .image {
@@ -235,6 +235,10 @@ button:active {
 
     .section_1 ul {
         width: 90%;
+    }
+
+    .section_1 .image_div {
+        margin-bottom: calc(30px + 5vw) !important;
     }
 }
 

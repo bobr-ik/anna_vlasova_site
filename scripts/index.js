@@ -53,3 +53,19 @@ function phone() {
 function navbar_link(page) {
     window.location.href = page;
 }
+
+function telegram_chanell() {
+    window.open('https://t.me/anna_VB_psy');
+}
+
+function vk() {
+  window.open('https://vk.com/anna_vlasova_boriskovskaya')
+}
+
+function b17() {
+  window.open('https://www.b17.ru/id803880/')
+}
+
+function instagram() {
+  window.open('https://www.instagram.com/anna_vlasovaa2004')
+}
