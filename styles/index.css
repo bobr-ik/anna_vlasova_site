@@ -170,6 +170,10 @@ html {
 
 }
 
+.section_2 .description {
+    text-align: center;
+}
+
 /* SECTION 2 cards */
 
 .section_2 .cards {
