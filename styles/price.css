@@ -11,7 +11,7 @@ html{
     -webkit-tap-highlight-color: transparent;
 }
 
-
+/* 
 
 .sign_up .sign_up_button{
     margin-top: 20px;
@@ -105,7 +105,7 @@ html{
         }
     }
 
-}
+} */
 
 button:active{
     background-color: var(--blue_hover) !important;

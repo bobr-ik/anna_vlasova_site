@@ -68,7 +68,7 @@ html {
 
 
 
-
+/* 
 .sign_up_button {
     margin-top: 20px;
     padding: 20px 50px;
@@ -94,9 +94,9 @@ html {
         }
     }
 
-}
+} */
 
-.sign_up {
+/* .sign_up {
     padding: 2vw 10vw 5vw 10vw;
     background-color: var(--blue);
     color: #fff;
@@ -163,15 +163,15 @@ html {
         }
     }
 
-}
+} */
 
 button:active {
-    background-color: var(--blue_hover) !important;
+    background-color: var(--blue_hover);
 }
 
 @media (hover) {
     button:hover {
-        background-color: var(--blue_hover) !important;
+        background-color: var(--blue_hover);
     }
 }
 

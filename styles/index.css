@@ -541,7 +541,6 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 20px 20px;
-    background-color: var(--dark);
 }
 
 footer .buttons {
@@ -598,17 +597,7 @@ footer p {
     text-align: center;
 }
 
-button:active {
-    background-color: var(--blue_hover) !important;
-}
 
-
-
-@media (hover) {
-    button:hover {
-        background-color: var(--blue_hover) !important;
-    }
-}
 
 
 
@@ -963,7 +952,7 @@ button:active {
 .sign_up .sign_up_button {
     margin-top: 20px;
     padding: 20px 50px;
-    background-color: var(--dark);
+    background-color: var(--lil_dark_bobr);
     color: #fff;
     border: none;
     cursor: pointer;
@@ -974,12 +963,21 @@ button:active {
     left: 50%;
     bottom: 5vw;
     transform: translateX(-50%);
+    
+}
+button:active {
+    background-color: var(--blue_hover) !important;
+}
 
+@media (hover) {
+    button:hover {
+        background-color: var(--blue_hover);
+    }
 }
 
 .sign_up {
     padding: 2vw 10vw 5vw 10vw;
-    background-color: var(--blue);
+    background-color: var(--bobr);
     color: #fff;
     position: relative;
 
@@ -1015,19 +1013,19 @@ button:active {
 
                 @media (hover) {
                     &:hover {
-                        color: var(--dark);
+                        color: var(--darker_bobr) !important;
                     }
 
                 }
             }
 
             &:active {
-                color: var(--dark);
+                color: var(--darker_bobr) !important;
             }
 
             @media (hover) {
                 &:hover {
-                    color: var(--dark);
+                    color: var(--darker_bobr) !important;
                 }
 
             }
@@ -1037,13 +1035,19 @@ button:active {
 
         button {
             height: 10vh;
-            background-color: var(--dark);
+            background-color: var(--lil_dark_bobr);
             border: none;
             cursor: pointer;
             border-radius: 50%;
             margin: 5px;
             width: 60px;
             height: 60px;
+
+            @media (hover) {
+                &:hover {
+                    background-color: var(--darker_bobr) !important;
+                }
+            }
         }
 
         .whatsapp {
@@ -1057,17 +1061,18 @@ button:active {
         }
     }
 
-}
+    .sign_up_button {
+        background-color: var(--lil_dark_bobr);
 
-button:active {
-    background-color: var(--blue_hover) !important;
-}
-
-@media (hover) {
-    button:hover {
-        background-color: var(--blue_hover) !important;
+        @media (hover) {
+            &:hover {
+                background-color: var(--dark_bobr) !important;
+            }
+        }
     }
+
 }
+
 
 
 @media screen and (max-width: 1100px) {
